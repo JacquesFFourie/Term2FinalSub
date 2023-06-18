@@ -14,42 +14,123 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body onload="showOrder()">
+  <div class="container-fluid">
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/aboutUs.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/buildSection.html">Build Your Sub!</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="/assets/comic-book-style-cartoon-tasty-sandwich-free-vector.jpg" style="height: 30px;width: 60px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/buildSection.html">Build Your Sub!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/checkout.html">Go to Basket</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <div class="row" style="margin-top: 50px;">
+      <h2 style="text-align: center; padding-bottom: 50px;">SUBS OF THE MONTH</h2>
+      <Div class="col-3">
+          <div class="card" style="width: 18rem;">
+              <img src="/assets/finalSubs/MeatAlot.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">MEAT Sub Meal</h5>
+                <p class="card-text">Meat sub with only meat products on it for our meat lovers out there!</p>
+                <p>Sauce:</p>
+                <p>Cheese Sauce</p>
+                <p>Toppings:</p>
+                <p>Salami, Chicken, Mince, Curry and Ham</p>
+                <select class="form-select" aria-label="Default select example" id="subSizeMeat">
+                  <option selected>Choose a Bread Type</option>
+                  <option value="Small">Plain</option>
+                  <option value="Medium">Lightly Toasted</option>
+                  <option value="Large">TOASTED</option>
+                </select>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+      </Div>
+      <Div class="col-3">
+          <div class="card" style="width: 18rem;">
+              <img src="/assets/finalSubs/AlotOfChiken.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Salub</h5>
+                <p class="card-text">Fully plant based sub for our earth lovers!</p>
+                <p>Sauce:</p>
+                <p>Mushroom Sauce</p>
+                <p>Toppings:</p>
+                <p>Celery, Brocoli, Tangerine and Pineapple</p>
+                <select class="form-select" aria-label="Default select example" id="subSizeVeg">
+                  <option selected>Choose a Bread Type</option>
+                  <option value="Small">Plain</option>
+                  <option value="Medium">Lightly Toasted</option>
+                  <option value="Large">TOASTED</option>
+                </select>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+      </Div>
+      <Div class="col-3">
+          <div class="card" style="width: 18rem;">
+              <img src="/assets/finalSubs/Baconator.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jake's Choice!</h5>
+                <p class="card-text">A bacon and syrup combo sub based of Jake's Bacon pancakes from Adventure Time!</p>
+                <p>Sauce:</p>
+                <p>Syrup</p>
+                <p>Toppings:</p>
+                <p>Pancakes and Bacon</p>
+                <select class="form-select" aria-label="Default select example" id="subSizeJake">
+                  <option selected>Choose a Bread Type</option>
+                  <option value="Small">Plain</option>
+                  <option value="Medium">Lightly Toasted</option>
+                  <option value="Large">TOASTED</option>
+                </select>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+      </Div>
+      <Div class="col-3">
+          <div class="card" style="width: 18rem;">
+              <img src="/assets/finalSubs/Pineapple.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CHAOS</h5>
+                <p class="card-text">EVERYTHING EVERYWHERE ALL AT ONCE.</p>
+                <p>Sauce:</p>
+                <p>ALL OF THEM</p>
+                <p>Toppings:</p>
+                <p>YES</p>
+                <select class="form-select" aria-label="Default select example" id="subSizeEve">
+                  <option selected>Choose a Bread Type!</option>
+                  <option value="Plain">Plain</option>
+                  <option value="Light Toasted">Light Toasted</option>
+                  <option value="TOASTED">TOASTED</option>
+                </select>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+      </Div>
+    </div>
     <div class="container-fluid">
+      <h3 style="text-align: center; padding-top: 100px;">CHECKOUT:</h3>
     <div class="row" style="margin-top: 200px;">
         <div class="col-8">
             <ul class="list-group">
-                <li class="list-group-item" id="subNameCheck">Name of Sub</li>
-                <li class="list-group-item"id="subSizeCheck" >Size of sub</li>
-                <li class="list-group-item" id="subPriceCheck">Price</li>
-                <li class="list-group-item" id="subToppings">Toppings</li>
+                <li class="list-group-item" id="subNameCheck">Name of Sub:</li>
+                <li class="list-group-item"id="subBreadCheck" >Bread Type of Sub:</li>
+                <li class="list-group-item" id="subPriceCheck">Price:</li>
+                <li class="list-group-item" id="subToppings">Toppings:</li>
+                <li class="list-group-item" id="subSauceName">Sauce:</li>
               </ul>
         </div>
         <div class="col-4">
@@ -57,9 +138,10 @@
                 <div class="card-body">
                   <h5 class="card-title">Total</h5>
                   <p class="card-text" id="subPriceCheckFinal">R0.00</p>
-                  <p>Discount code</p>
-                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="#CODE">
-                  <a href="#" class="btn btn-primary" style="margin-top: 50px;">PAY</a>
+                  <p id="DiscountText">Discount code</p>
+                  <input type="text" class="form-control" id="discountCode" placeholder="#CODE">
+                  <a href="#" class="btn btn-primary" style="margin-top: 50px;" id="discountBtn" onclick="discountCode()">Apply Discount</a>
+                  <a href="../index.html" class="btn btn-primary" style="margin-top: 50px;" onclick="resetReturn()">PAY</a>
                 </div>
               </div>
         </div>
